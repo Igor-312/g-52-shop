@@ -1,6 +1,7 @@
 package de.aittr.g_52_shop.service;
 
 import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.model.ObjectMetadata;
 import de.aittr.g_52_shop.service.interfaces.FileService;
 import de.aittr.g_52_shop.service.interfaces.ProductService;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,15 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public String upload(MultipartFile file, String productTitle) {
-        return "";
+        try {
+            String uniqueName = generateUniqueFileName(file);
+
+            ObjectMetadata metadata = new ObjectMetadata();
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private String generateUniqueFileName(MultipartFile file) {
