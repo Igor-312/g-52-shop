@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: g-52-shop
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+
+key:
+  access: N0AzQXxefvukpbnmyXERKkVMesjBl7iHEhlVcTAJi00=
+  refresh: 1o9dB8qgrD/hI0L4XOiWlAMpfzBLon0Vd9kYCM2uqkg=
+
+messages:
+  hello: Hello from Digital Ocean!
