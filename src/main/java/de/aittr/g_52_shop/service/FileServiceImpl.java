@@ -1,7 +1,9 @@
 package de.aittr.g_52_shop.service;
 
 import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import de.aittr.g_52_shop.service.interfaces.FileService;
 import de.aittr.g_52_shop.service.interfaces.ProductService;
 import org.springframework.stereotype.Service;
@@ -26,8 +28,19 @@ public class FileServiceImpl implements FileService {
             String uniqueName = generateUniqueFileName(file);
 
             ObjectMetadata metadata = new ObjectMetadata();
+            metadata.setContentType(file.getContentType());
 
+            PutObjectRequest request = new PutObjectRequest(
+                    "shop-bucket", uniqueName, file.getInputStream(), metadata
+            ).withCannedAcl(CannedAccessControlList.PublicRead);
 
+            client.putObject(request);
+
+            String url = client.getUrl("shop-bucket", uniqueName).toString();
+
+            productService.attachImage(url, productTitle);
+
+            return url;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
