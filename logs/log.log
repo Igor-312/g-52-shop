@@ -840,3 +840,224 @@ Caused by: java.lang.IllegalArgumentException: Access key cannot be null.
 2025-03-13T15:52:19.541+01:00  INFO 9396 --- [g-52-shop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-13T15:52:19.549+01:00  INFO 9396 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-13T15:52:19.599+01:00  INFO 9396 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T16:48:18.505+01:00  INFO 22388 --- [g-52-shop] [main] d.a.g.s.s.AuthControllerTestIT           : Starting AuthControllerTestIT using Java 17.0.13 with PID 22388 (started by igore in C:\Java Projects\g-52-shop)
+2025-03-13T16:48:18.512+01:00  INFO 22388 --- [g-52-shop] [main] d.a.g.s.s.AuthControllerTestIT           : The following 1 profile is active: "dev"
+2025-03-13T16:48:21.087+01:00  INFO 22388 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T16:48:21.416+01:00  INFO 22388 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 303 ms. Found 5 JPA repository interfaces.
+2025-03-13T16:48:26.252+01:00  INFO 22388 --- [g-52-shop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-03-13T16:48:26.334+01:00  INFO 22388 --- [g-52-shop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T16:48:26.335+01:00  INFO 22388 --- [g-52-shop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T16:48:26.652+01:00  INFO 22388 --- [g-52-shop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-13T16:48:26.655+01:00  INFO 22388 --- [g-52-shop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8050 ms
+2025-03-13T16:48:27.451+01:00  INFO 22388 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T16:48:28.622+01:00  INFO 22388 --- [g-52-shop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42e4431
+2025-03-13T16:48:28.629+01:00  INFO 22388 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T16:48:32.389+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:48:32.649+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-13T16:48:32.656+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:48:32.695+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-13T16:48:32.696+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : Run:                          0
+2025-03-13T16:48:32.696+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : Previously run:              20
+2025-03-13T16:48:32.696+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : Filtered out:                 0
+2025-03-13T16:48:32.697+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : -------------------------------
+2025-03-13T16:48:32.697+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : Total change sets:           20
+2025-03-13T16:48:32.699+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.util                           : Update summary generated
+2025-03-13T16:48:32.705+01:00  INFO 22388 --- [g-52-shop] [main] liquibase.command                        : Command execution complete
+2025-03-13T16:48:33.131+01:00  INFO 22388 --- [g-52-shop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T16:48:33.349+01:00  INFO 22388 --- [g-52-shop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T16:48:33.608+01:00  INFO 22388 --- [g-52-shop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T16:48:34.314+01:00  INFO 22388 --- [g-52-shop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T16:48:34.717+01:00  INFO 22388 --- [g-52-shop] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T16:48:37.185+01:00  INFO 22388 --- [g-52-shop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T16:48:37.193+01:00  INFO 22388 --- [g-52-shop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:48:41.238+01:00  WARN 22388 --- [g-52-shop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T16:48:41.338+01:00  INFO 22388 --- [g-52-shop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-03-13T16:48:43.828+01:00  WARN 22388 --- [g-52-shop] [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location: [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-13T16:48:44.337+01:00  INFO 22388 --- [g-52-shop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50998 (http) with context path '/'
+2025-03-13T16:48:44.374+01:00  INFO 22388 --- [g-52-shop] [main] d.a.g.s.s.AuthControllerTestIT           : Started AuthControllerTestIT in 27.627 seconds (process running for 31.087)
+2025-03-13T16:48:45.321+01:00  INFO 22388 --- [g-52-shop] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T16:48:45.321+01:00  INFO 22388 --- [g-52-shop] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T16:48:45.325+01:00  INFO 22388 --- [g-52-shop] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-13T16:48:46.565+01:00  INFO 22388 --- [g-52-shop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T16:48:46.913+01:00  INFO 22388 --- [g-52-shop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T16:48:46.941+01:00  INFO 22388 --- [g-52-shop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:48:46.955+01:00  INFO 22388 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T16:48:46.991+01:00  INFO 22388 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T16:52:06.086+01:00  INFO 9608 --- [g-52-shop] [main] de.aittr.g_52_shop.G52ShopApplication    : Starting G52ShopApplication using Java 17.0.13 with PID 9608 (C:\Java Projects\g-52-shop\target\classes started by igore in C:\Java Projects\g-52-shop)
+2025-03-13T16:52:06.094+01:00  INFO 9608 --- [g-52-shop] [main] de.aittr.g_52_shop.G52ShopApplication    : The following 1 profile is active: "dev"
+2025-03-13T16:52:09.060+01:00  INFO 9608 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T16:52:09.301+01:00  INFO 9608 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 197 ms. Found 5 JPA repository interfaces.
+2025-03-13T16:52:10.817+01:00  INFO 9608 --- [g-52-shop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T16:52:10.831+01:00  INFO 9608 --- [g-52-shop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T16:52:10.831+01:00  INFO 9608 --- [g-52-shop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T16:52:10.899+01:00  INFO 9608 --- [g-52-shop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-13T16:52:10.900+01:00  INFO 9608 --- [g-52-shop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4655 ms
+2025-03-13T16:52:11.124+01:00  INFO 9608 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T16:52:11.551+01:00  INFO 9608 --- [g-52-shop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23469199
+2025-03-13T16:52:11.554+01:00  INFO 9608 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T16:52:12.840+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:52:12.917+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-13T16:52:12.920+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:52:12.934+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-13T16:52:12.935+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : Run:                          0
+2025-03-13T16:52:12.935+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : Previously run:              20
+2025-03-13T16:52:12.935+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : Filtered out:                 0
+2025-03-13T16:52:12.935+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : -------------------------------
+2025-03-13T16:52:12.935+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : Total change sets:           20
+2025-03-13T16:52:12.938+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.util                           : Update summary generated
+2025-03-13T16:52:12.939+01:00  INFO 9608 --- [g-52-shop] [main] liquibase.command                        : Command execution complete
+2025-03-13T16:52:13.042+01:00  INFO 9608 --- [g-52-shop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T16:52:13.208+01:00  INFO 9608 --- [g-52-shop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T16:52:13.372+01:00  INFO 9608 --- [g-52-shop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T16:52:14.445+01:00  INFO 9608 --- [g-52-shop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T16:52:14.617+01:00  INFO 9608 --- [g-52-shop] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T16:52:17.258+01:00  INFO 9608 --- [g-52-shop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T16:52:17.264+01:00  INFO 9608 --- [g-52-shop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:52:18.027+01:00  WARN 9608 --- [g-52-shop] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController' defined in file [C:\Java Projects\g-52-shop\target\classes\de\aittr\g_52_shop\controller\FileController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'fileServiceImpl' defined in file [C:\Java Projects\g-52-shop\target\classes\de\aittr\g_52_shop\service\FileServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'doClient' defined in class path resource [de/aittr/g_52_shop/config/AppConfig.class]: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'doClient' threw exception with message: Access key cannot be null.
+2025-03-13T16:52:18.027+01:00  INFO 9608 --- [g-52-shop] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:52:18.031+01:00  INFO 9608 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T16:52:18.042+01:00  INFO 9608 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T16:52:18.044+01:00  INFO 9608 --- [g-52-shop] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-13T16:52:18.064+01:00  INFO 9608 --- [g-52-shop] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-13T16:52:18.086+01:00 ERROR 9608 --- [g-52-shop] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController' defined in file [C:\Java Projects\g-52-shop\target\classes\de\aittr\g_52_shop\controller\FileController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'fileServiceImpl' defined in file [C:\Java Projects\g-52-shop\target\classes\de\aittr\g_52_shop\service\FileServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'doClient' defined in class path resource [de/aittr/g_52_shop/config/AppConfig.class]: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'doClient' threw exception with message: Access key cannot be null.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at de.aittr.g_52_shop.G52ShopApplication.main(G52ShopApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileServiceImpl' defined in file [C:\Java Projects\g-52-shop\target\classes\de\aittr\g_52_shop\service\FileServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'doClient' defined in class path resource [de/aittr/g_52_shop/config/AppConfig.class]: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'doClient' threw exception with message: Access key cannot be null.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'doClient' defined in class path resource [de/aittr/g_52_shop/config/AppConfig.class]: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'doClient' threw exception with message: Access key cannot be null.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.amazonaws.services.s3.AmazonS3]: Factory method 'doClient' threw exception with message: Access key cannot be null.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Access key cannot be null.
+	at com.amazonaws.auth.BasicAWSCredentials.<init>(BasicAWSCredentials.java:72) ~[aws-java-sdk-core-1.12.720.jar:na]
+	at com.amazonaws.auth.BasicAWSCredentials.<init>(BasicAWSCredentials.java:39) ~[aws-java-sdk-core-1.12.720.jar:na]
+	at de.aittr.g_52_shop.config.AppConfig.doClient(AppConfig.java:21) ~[classes/:na]
+	at de.aittr.g_52_shop.config.AppConfig$$SpringCGLIB$$0.CGLIB$doClient$0(<generated>) ~[classes/:na]
+	at de.aittr.g_52_shop.config.AppConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.3.jar:6.2.3]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:372) ~[spring-context-6.2.3.jar:6.2.3]
+	at de.aittr.g_52_shop.config.AppConfig$$SpringCGLIB$$0.doClient(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 52 common frames omitted
+
+2025-03-13T16:53:50.370+01:00  INFO 11752 --- [g-52-shop] [main] de.aittr.g_52_shop.G52ShopApplication    : Starting G52ShopApplication using Java 17.0.13 with PID 11752 (C:\Java Projects\g-52-shop\target\classes started by igore in C:\Java Projects\g-52-shop)
+2025-03-13T16:53:50.376+01:00  INFO 11752 --- [g-52-shop] [main] de.aittr.g_52_shop.G52ShopApplication    : The following 1 profile is active: "dev"
+2025-03-13T16:53:52.388+01:00  INFO 11752 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T16:53:52.538+01:00  INFO 11752 --- [g-52-shop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 5 JPA repository interfaces.
+2025-03-13T16:53:53.790+01:00  INFO 11752 --- [g-52-shop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-13T16:53:53.814+01:00  INFO 11752 --- [g-52-shop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T16:53:53.815+01:00  INFO 11752 --- [g-52-shop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-13T16:53:53.943+01:00  INFO 11752 --- [g-52-shop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-13T16:53:53.944+01:00  INFO 11752 --- [g-52-shop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3437 ms
+2025-03-13T16:53:54.261+01:00  INFO 11752 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T16:53:54.816+01:00  INFO 11752 --- [g-52-shop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2830315f
+2025-03-13T16:53:54.819+01:00  INFO 11752 --- [g-52-shop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T16:53:56.476+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:53:56.598+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-13T16:53:56.603+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.changelog                      : Reading from g_52_shop.databasechangelog
+2025-03-13T16:53:56.619+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : UPDATE SUMMARY
+2025-03-13T16:53:56.619+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : Run:                          0
+2025-03-13T16:53:56.620+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : Previously run:              20
+2025-03-13T16:53:56.620+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : Filtered out:                 0
+2025-03-13T16:53:56.621+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : -------------------------------
+2025-03-13T16:53:56.621+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : Total change sets:           20
+2025-03-13T16:53:56.624+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.util                           : Update summary generated
+2025-03-13T16:53:56.627+01:00  INFO 11752 --- [g-52-shop] [main] liquibase.command                        : Command execution complete
+2025-03-13T16:53:56.892+01:00  INFO 11752 --- [g-52-shop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T16:53:56.993+01:00  INFO 11752 --- [g-52-shop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-13T16:53:57.061+01:00  INFO 11752 --- [g-52-shop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T16:53:57.898+01:00  INFO 11752 --- [g-52-shop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T16:53:58.121+01:00  INFO 11752 --- [g-52-shop] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-13T16:54:01.455+01:00  INFO 11752 --- [g-52-shop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T16:54:01.460+01:00  INFO 11752 --- [g-52-shop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:54:04.204+01:00  WARN 11752 --- [g-52-shop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T16:54:04.310+01:00  INFO 11752 --- [g-52-shop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-03-13T16:54:05.715+01:00  WARN 11752 --- [g-52-shop] [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location: [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2025-03-13T16:54:05.844+01:00  INFO 11752 --- [g-52-shop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-13T16:54:05.859+01:00  INFO 11752 --- [g-52-shop] [main] de.aittr.g_52_shop.G52ShopApplication    : Started G52ShopApplication in 16.932 seconds (process running for 18.918)
+2025-03-13T16:55:42.965+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T16:55:42.966+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T16:55:42.974+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
