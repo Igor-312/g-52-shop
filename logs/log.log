@@ -1061,3 +1061,8 @@ Caused by: java.lang.IllegalArgumentException: Access key cannot be null.
 2025-03-13T16:55:42.965+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-03-13T16:55:42.966+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-03-13T16:55:42.974+01:00  INFO 11752 --- [g-52-shop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-03-13T16:57:02.742+01:00  INFO 11752 --- [g-52-shop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-13T16:57:03.137+01:00  INFO 11752 --- [g-52-shop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-13T16:57:03.153+01:00  INFO 11752 --- [g-52-shop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T16:57:03.158+01:00  INFO 11752 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T16:57:03.185+01:00  INFO 11752 --- [g-52-shop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
