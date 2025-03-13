@@ -41,7 +41,7 @@ public class Product {
     @NotNull(message = "Product title cannot be null")
     @NotBlank(message = "Product title cannot be empty")
     @Pattern(
-            regexp = "[A_Z][a-z ]{2,}",
+            regexp = "[A-Z][a-z ]{2,}",
             message = "Product title should be at least three characters length and start with capital letter"
     )
     private String title;

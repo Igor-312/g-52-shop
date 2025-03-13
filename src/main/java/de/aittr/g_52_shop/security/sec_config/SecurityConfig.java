@@ -46,14 +46,16 @@ public class SecurityConfig {
                 // При помощи этого метода мы конфигурируем доступ к разному функционалу
                 // приложения для разных ролей пользователей
                 .authorizeHttpRequests(x -> x
-                        .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/products/").hasAnyRole("ADMIN", "USER")
-                        .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/refresh").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/register").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/hello").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/files").hasRole("ADMIN")
-                        .anyRequest().authenticated()
+                                .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/products/").hasAnyRole("ADMIN", "USER")
+                                .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
+                                .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/refresh").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/register").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/hello").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/files").hasRole("ADMIN")
+                                .requestMatchers(HttpMethod.POST, "/customers").hasRole("ADMIN")
+                                .requestMatchers(HttpMethod.PUT, "/customers/**").hasAnyRole("ADMIN", "USER")
+//                        .anyRequest().authenticated()
                 )
                 .addFilterAfter(filter, UsernamePasswordAuthenticationFilter.class)
                 .build();

@@ -1,6 +1,7 @@
 package de.aittr.g_52_shop.service.interfaces;
 
 import de.aittr.g_52_shop.domain.dto.ProductDto;
+import de.aittr.g_52_shop.domain.entity.Product;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -19,6 +20,8 @@ public interface ProductService {
 // • Вернуть один продукт из базы данных по его идентификатору (если он активен).
 //    Product getById(Long id);
     ProductDto getById(Long id);
+
+    Product getActiveProductEntityById(Long id);
 
 // • Изменить один продукт в базе данных по его идентификатору.
 //    void update(Product product);

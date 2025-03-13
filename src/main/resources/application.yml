@@ -8,7 +8,25 @@ spring:
     password: ${DB_PASSWORD}
   liquibase:
     change-log: classpath:db/changelog/changelog-master.xml
-
+  jpa:
+    properties:
+      hibernate:
+        auto_quote_keyword: true
+  mail:
+    username: ait.andrey.mailer@gmail.com
+    password: dikqasfakbxoaxcp
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            protocols: TLSv1.2
+            trust: smtp.gmail.com
 key:
   access: N0AzQXxefvukpbnmyXERKkVMesjBl7iHEhlVcTAJi00=
   refresh: 1o9dB8qgrD/hI0L4XOiWlAMpfzBLon0Vd9kYCM2uqkg=

@@ -32,11 +32,11 @@ public class User implements UserDetails {
     @Column(name = "active")
     private boolean active;
 
-    @Column(name = "activation_code")
-    private String activationCode;
-
-    @Column(name = "activation_code_created_at")
-    private LocalDateTime activationCodeCreatedAt;
+//    @Column(name = "activation_code")
+//    private String activationCode;
+//
+//    @Column(name = "activation_code_created_at")
+//    private LocalDateTime activationCodeCreatedAt;
 
     public String getEmail() {
         return email;
@@ -54,21 +54,21 @@ public class User implements UserDetails {
         this.active = active;
     }
 
-    public String getActivationCode() {
-        return activationCode;
-    }
-
-    public void setActivationCode(String activationCode) {
-        this.activationCode = activationCode;
-    }
-
-    public LocalDateTime getActivationCodeCreatedAt() {
-        return activationCodeCreatedAt;
-    }
-
-    public void setActivationCodeCreatedAt(LocalDateTime activationCodeCreatedAt) {
-        this.activationCodeCreatedAt = activationCodeCreatedAt;
-    }
+//    public String getActivationCode() {
+//        return activationCode;
+//    }
+//
+//    public void setActivationCode(String activationCode) {
+//        this.activationCode = activationCode;
+//    }
+//
+//    public LocalDateTime getActivationCodeCreatedAt() {
+//        return activationCodeCreatedAt;
+//    }
+//
+//    public void setActivationCodeCreatedAt(LocalDateTime activationCodeCreatedAt) {
+//        this.activationCodeCreatedAt = activationCodeCreatedAt;
+//    }
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(

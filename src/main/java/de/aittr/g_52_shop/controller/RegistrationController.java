@@ -21,13 +21,15 @@ public class RegistrationController {
         return new Response("Регистрация успешна. Проверьте почту для подтверждения.");
     }
 
-    @GetMapping("/activate")
-    public Response activateUser(@RequestParam String code) {
-        boolean activated = service.activateUser(code);
-        if (activated) {
-            return new Response("Активация успешна! Теперь вы можете войти.");
-        } else {
-            return new Response("Ошибка активации. Возможно, код недействителен или истёк.");
-        }
-    }
+
+
+//    @GetMapping("/activate")
+//    public Response activateUser(@RequestParam String code) {
+//        boolean activated = service.activateUser(code);
+//        if (activated) {
+//            return new Response("Активация успешна! Теперь вы можете войти.");
+//        } else {
+//            return new Response("Ошибка активации. Возможно, код недействителен или истёк.");
+//        }
+//    }
 }

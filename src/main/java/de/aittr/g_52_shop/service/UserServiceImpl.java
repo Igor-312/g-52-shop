@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
     private final BCryptPasswordEncoder encoder;
     private final RoleService roleService;
     private final EmailService emailService;
-    private static final int ACTIVATION_EXPIRATION_HOURS = 2;
+//    private static final int ACTIVATION_EXPIRATION_HOURS = 2;
 
     public UserServiceImpl(UserRepository repository, BCryptPasswordEncoder encoder, RoleService roleService, EmailService emailService) {
         this.repository = repository;
@@ -48,30 +48,30 @@ public class UserServiceImpl implements UserService {
         user.setActive(false);
         user.setRoles(Set.of(roleService.getRoleUser()));
 
-        user.setActivationCode(UUID.randomUUID().toString());
-        user.setActivationCodeCreatedAt(LocalDateTime.now());
+//        user.setActivationCode(UUID.randomUUID().toString());
+//        user.setActivationCodeCreatedAt(LocalDateTime.now());
 
         repository.save(user);
         emailService.sendConfirmationEmail(user);
     }
 
-    @Override
-    public boolean activateUser(String code) {
-        Optional<User> userOptional = repository.findByActivationCode(code);
-        if (userOptional.isEmpty()) {
-            return false;
-        }
-
-        User user = userOptional.get();
-        LocalDateTime expirationTime = user.getActivationCodeCreatedAt().plusHours(ACTIVATION_EXPIRATION_HOURS);
-        if (LocalDateTime.now().isAfter(expirationTime)) {
-            return false; // Код истёк
-        }
-
-        user.setActive(true);
-        user.setActivationCode(null);
-        user.setActivationCodeCreatedAt(null);
-        repository.save(user);
-        return true;
-    }
+//    @Override
+//    public boolean activateUser(String code) {
+//        Optional<User> userOptional = repository.findByActivationCode(code);
+//        if (userOptional.isEmpty()) {
+//            return false;
+//        }
+//
+//        User user = userOptional.get();
+//        LocalDateTime expirationTime = user.getActivationCodeCreatedAt().plusHours(ACTIVATION_EXPIRATION_HOURS);
+//        if (LocalDateTime.now().isAfter(expirationTime)) {
+//            return false; // Код истёк
+//        }
+//
+//        user.setActive(true);
+//        user.setActivationCode(null);
+//        user.setActivationCodeCreatedAt(null);
+//        repository.save(user);
+//        return true;
+//    }
 }

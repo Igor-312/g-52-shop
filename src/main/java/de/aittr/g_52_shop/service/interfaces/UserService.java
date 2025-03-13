@@ -6,5 +6,5 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 public interface UserService extends UserDetailsService {
 
     void register(User user);
-    boolean activateUser(String code);
+//    boolean activateUser(String code);
 }
